@@ -1,0 +1,312 @@
+:root {
+    --lightColor :#fff;
+    --lightYellow :blanchedalmond;
+    --colorBrown : brown;
+    --dark : black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    
+}
+
+/* main section  */
+main {
+  width: 100%;
+ padding: 20px;
+    
+    background-color: var(--lightColor);
+
+}
+h1,h2 {
+    color: var(--colorBrown);
+}
+
+/* header */
+
+header{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--dark);
+    height: 80px;
+    
+}
+h1 {
+   /* width: 25%; */
+   
+   padding-left: 5%;
+   padding-right: 1%;
+    margin : 20px 0;
+    background-color: var(--lightYellow);
+    color:var(--colorBrown);
+    font-size: 2rem;
+}
+
+h2 {
+    font-size:2.2rem ;
+    margin-top: 0 ;
+    padding: 0 20px ;
+    
+    border-right: 2px solid var(--colorBrown);
+}
+nav ul li {
+    display: inline;
+   
+}
+nav   {
+    width: 78%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+
+}
+
+a {
+    text-decoration: none;
+    margin-left: 20px;
+    border-bottom: 2px solid var(--lightYellow);
+    color: blanchedalmond;
+    
+}
+
+
+.header-img figure .hero-img {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(151, 151, 182);
+    background: url("../images/pexels-negative-space-160107.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+.subtitle {
+    display: inline; 
+    padding: 20px;
+    background-color: var(--lightYellow);
+    color: var(--colorBrown);
+    position: relative;
+    right: -1200px;
+    bottom: 80px;
+  
+    
+}
+
+
+/* content */
+
+
+.aboutMe, .work{
+    padding: 2% 4%;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.work h2 {
+    /* padding-right: 30px; */
+    padding-right: 2.2%;
+}
+
+p {
+    margin-left: 2%;
+    font-size: 12px;
+}
+
+/* work section */
+
+.projects {
+    width: 100%;
+    margin-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects .box {
+    margin: 2%;
+}
+
+
+.box {
+    /* width: 200px; */
+    height: 200px;
+    
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.big-div {
+    flex: 0 0 96%;
+    background-image: url("../images/pexels-markus-spiske-1089440.jpg") ;
+   
+}  
+
+.bk1 {
+    background-image: url("../images/proj-back-2.jpeg") ;
+}
+.bk2 {
+    background-image: url("../images/pb-3.jpeg") ;
+}
+.bk3 {
+    background-image: url("../images/pexels-miguel-á-padriñán-1591060.jpg") ;
+}
+.bk4 {
+    background-image: url("../images/pexels-negative-space-160107.jpg") ;
+}
+
+.mini-project {
+    margin-bottom: 2%;
+   display: inline;
+    background-color:var(--lightYellow);
+    padding: 10px;
+}
+
+.mini-project h5 {
+    padding: 0;
+    margin: 0;
+}
+.mini-project p {
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+.subBox {
+    flex:0 0 46%;
+}
+
+
+/* footer */
+
+
+
+.contact-me {
+    width: 100%;
+    padding: 2% ;
+    display: flex; 
+    flex-wrap: wrap;
+    
+}
+
+ .contact-me h2 {
+
+   width: 13%;
+   padding-right: 2%;
+   
+} 
+
+
+.contact-me ul {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact-me ul li a, .link-underline {
+    color: var(--colorBrown);
+    border-bottom: 2px solid var(--colorBrown);
+}
+
+/* Media Queries */
+
+/* Tablets */
+@media screen and (max-width: 992px) {
+    header {
+        height: 120px;
+    }
+
+    h1 {
+        width: 100%;
+        margin: 0;
+        display: block;
+        text-align: center;
+      
+     }
+     nav   {
+       width: 100%;
+        display: block;
+        text-align: center;
+        margin: 20px;
+        
+    }
+
+    .subtitle {
+       
+        left: 700px;
+        
+    }
+    .aboutMe, .work {
+        display: block;
+
+    }
+    .aboutMe h2, .work h2, .contact-me h2 {
+        border-bottom: 3px solid var(--colorBrown);
+        border-right: none;
+        margin-bottom: 20px;
+        font-size: 3rem;
+    }
+    .work h2 {
+       
+        padding-right: 3.2%;
+    }
+    .contact-me h2 {
+        width: 100%;
+
+    }
+    .contact-me ul {
+        width: 100%;
+        text-align: center;
+    }
+
+   
+
+}
+
+/* Small smartphones  */
+@media screen and (max-width: 576px) {
+
+    .subtitle {
+       
+        left: 200px;
+        
+    }
+
+    .projects{
+        display: block;
+    }
+    .contact-me ul  {
+       display: block;
+       
+    }
+    .contact-me ul li a, .link-underline {
+        
+        border-bottom: none;
+        text-align: start;
+    }
+    .contact-me ul li {
+        text-align: start;
+        
+
+    }
+    .contact-me ul li a {
+        margin: 0;
+        border-bottom: 2px solid var(--colorBrown);
+        border-width: 2px;
+    }
+
+    
+    
+  }
+  
+
+
+
+
+
+
