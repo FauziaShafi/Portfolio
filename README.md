@@ -4,7 +4,7 @@
 
 ## Description
 
-In this activity, we have to create portfolio page from scratch.
+This week's activity was to create a webpage from scratch. The website needs to be responsive, and all the links should work properly.
 
 ## Usage
 
@@ -17,3 +17,4 @@ In this activity, we have to create portfolio page from scratch.
    
 
 
+Access deployed application here- https://fauziashafi.github.io/Portfolio/

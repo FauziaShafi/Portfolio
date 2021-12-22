@@ -90,7 +90,9 @@ a {
     display: inline; 
     padding: 20px;
     background-color: var(--lightYellow);
-    color: var(--colorBrown);
+    color: var(--colorBrown
+    
+    );
     position: relative;
     right: -1200px;
     bottom: 80px;
