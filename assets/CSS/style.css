@@ -107,10 +107,9 @@ a {
 .aboutMe, .work{
     padding: 2% 4%;
     display: flex;
-    /* flex-wrap: wrap; */
+ 
 }
 .work h2 {
-    /* padding-right: 30px; */
     padding-right: 2.2%;
 }
 
@@ -133,7 +132,7 @@ p {
 
 
 .box {
-    /* width: 200px; */
+    
     height: 200px;
     
     background-color: gray;
@@ -148,6 +147,10 @@ p {
     background-image: url("../images/pexels-markus-spiske-1089440.jpg") ;
    
 }  
+.bk0 {
+    background-image: url("../images/ss0.png") ;
+
+}
 
 .bk1 {
     background-image: url("../images/proj-back-2.jpeg") ;
@@ -200,7 +203,7 @@ p {
  .contact-me h2 {
 
    width: 13%;
-   padding-right: 2%;
+   padding: 1%;
    
 } 
 
@@ -261,6 +264,7 @@ p {
     }
     .contact-me h2 {
         width: 100%;
+        padding: 1%;
 
     }
     .contact-me ul {
